@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+
+        <div class ="col-md-6">
+            <div class ="card">
+    <div class="text-center">
+        <h1>Testy Codeiz Resto App V2.O</h1>
+        <strong >Get free Membership ☺!</strong><hr>
+    </div>
+
+    <form [formGroup]="myform" (ngSubmit)="signup()">
+        <div class="form-group">
+          <div class="mb-3">
+          <label for="exampleInputEmail1">Name</label>
+          <input type="name" formControlName="name"  maxlength="20" class="form-control" id="exampleInputEmail1"  placeholder="Enter your Name">
+          <small *ngIf="myform.get('name')?.invalid && myform.get('name')?.touched"class="text-danger" >&nbsp;Name is Required</small>
+        </div>
+        </div>
+
+        <div class="form-group">
+          <div class="mb-3">
+          <label for="exampleInputEmail1">Mobile Number</label>
+          <input type="number"formControlName="mobile"  maxlength="10" class="form-control" id="exampleInputEmail1"  placeholder="Enter your Mobile Number">
+          <small *ngIf="myform.get('mobile')?.invalid && myform.get('mobile')?.touched"class="text-danger" >&nbsp;  Mobile Number is required</small>
+        </div>
+        </div>
+
+        <div class="form-group">
+          <div class="mb-3">
+          <label for="exampleInputEmail1">Email id</label>
+          <input type="email"maxlength="25" formControlName="email" class="form-control" id="exampleInputEmail1"  placeholder="Enter your Email">
+          <small *ngIf="myform.get('email')?.invalid && myform.get('email')?.touched"class="text-danger" >&nbsp;  Email id  is required</small>
+        </div>
+        </div>
+
+        <div class="form-group">
+          <div class="mb-3">
+          <label for="exampleInputEmail1">Password</label>
+          <input type="password"maxlength="20"  formControlName="password"class="form-control"   placeholder="Enter your Password">
+          <small *ngIf="myform.get('password')?.invalid && myform.get('password')?.touched"class="text-danger" >&nbsp; Password is required</small>
+        </div>
+        </div>
+
+        <button type="submit" [disabled]="myform.invalid"class="btn btn-primary">Signup</button>
+      </form>
+
+      <a style="color:rgb(245, 4, 4); margin-top:10px;" routerLink="/login">Already registred? Click here to Login !</a>
+
+            </div>
+        </div>
+    </div>
+    </div>
+

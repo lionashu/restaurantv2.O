@@ -1,0 +1,27 @@
+
+
+
+.card{
+
+    width: 550px;
+    height: 393px;
+    background: rgb(2, 10, 162);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 31px 40px;
+    border:1px solid white;
+    /*margin-top: 10px;
+    border:1px solid orange;
+    width:550px;
+    padding: 45px;
+    position:absolute;
+    top:15%;
+    left: 27%;
+    background: lightgoldenrodyellow; */
+
+}
+

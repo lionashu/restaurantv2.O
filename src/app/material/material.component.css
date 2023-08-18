@@ -1,0 +1,26 @@
+
+
+
+mat-card{
+    max-width: 600px;
+    margin: 2em auto;
+    text-align: center;
+    max-height: 600px;
+}
+
+.header{
+    text-align: center;
+}
+.full-width{
+    width: 80%;
+}
+
+
+.email-input{
+    padding-top: 10px;
+}
+.aLink{
+    float:right;
+    padding-right: 60px;
+    text-decoration: none;
+}

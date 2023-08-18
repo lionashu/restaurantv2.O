@@ -1,0 +1,62 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Ashish ",
+      "email": "ashish@gmail.com",
+      "mobile": 898565655656565,
+      "address": "somthing",
+      "services": "Food service"
+    },
+    {
+      "id": 2,
+      "name": "ashu",
+      "email": "abc@gnshu.cin",
+      "mobile": 2542454522424,
+      "address": "allahabad",
+      "services": "Tea"
+    },
+    {
+      "id": 3,
+      "name": "Baba Dhaba",
+      "email": "baba@glmail.com",
+      "mobile": 857485698569,
+      "address": "New Delhi janakpuri",
+      "services": "Fast Food"
+    }
+  ],
+  "comments": [],
+  "signup": [
+    {
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "mobile": 9658974568,
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "Ashish ",
+      "email": "ashish@gmail.com",
+      "mobile": 8874886684,
+      "password": "ashish",
+      "id": 3
+    },
+    {
+      "name": "ashu",
+      "email": "ashu@gmail.com",
+      "mobile": 0,
+      "password": "123456789",
+      "id": 4
+    },
+    {
+      "name": "binu",
+      "email": "binu@gmail.com",
+      "mobile": 8644444646441,
+      "password": "123456789",
+      "id": 5
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

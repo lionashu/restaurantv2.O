@@ -1,0 +1,71 @@
+<mat-card>
+    <mat-card-content>
+        <div class="header">
+            <h2>RESTUARENT LOGIN</h2>
+        </div>
+
+<form (ngSubmit)="login()" name="loginForm"[formGroup]="loginForm">
+<div class ="email-input">
+
+    <mat-form-field class="full-width" appearance="outline">
+<mat-label>Email</mat-label>
+<input formControlName="email" matInput required />
+<mat-error *ngIf="loginForm.get('email')">
+ email address is required
+</mat-error>
+  </mat-form-field>
+</div>
+<div> 
+
+
+<!---
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>password</mat-label>
+        <input formControlName="password" matInput [type]="hide ? 'password': 'text'  " required />
+    <p mat-icon-buton matSuffix (click)="hide = !hide"
+    
+        [attr.aria-label]="'Hide password'" [attr.aira-pressed]="hide">
+        <mat-icon>{{ hide ? 'visibility_off':'visibility'}}</mat-icon>
+    </p>
+    
+    
+        <mat-error *ngIf="loginForm.get('password')">
+        password is required
+        </mat-error>
+          </mat-form-field>        -->            
+
+<!--main-->
+
+<mat-form-field class="full-width" appearance="outline">
+    <mat-label>Password</mat-label>
+    <input matInput formControlName="password" [type]="showPassword ? 'text' : 'password'" name="password" required />
+    <mat-icon matSuffix (click)="togglePasswordVisibility()">
+     
+        {{showPassword?'visibility_off':'visibility'}}
+    </mat-icon>
+
+<mat-error *ngIf="loginForm.get('password')">
+    password is required
+    </mat-error>
+      </mat-form-field>
+
+<!--end extra -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <button mat-flat-button color="primary">Login</button>
+</form> <br>
+<a style="color:blue; margin-top:10px;"routerLink="/signup">New user? Click to Signup !</a>
+    </mat-card-content>
+</mat-card>

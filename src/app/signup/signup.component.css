@@ -1,0 +1,24 @@
+.card{
+  /*  margin-top: 10px;
+    border:1px solid orange;
+    width:550px;
+    padding: 50px;
+    position:absolute;
+    top:2%;
+    left: 27%;
+    background: lightgoldenrodyellow; */
+
+
+    width: 487px;
+    height: 582px;
+    background: rgb(4, 28, 186);
+    color: aliceblue;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 13px 30px;
+    border:1px solid white;
+
+}

@@ -1,0 +1,38 @@
+
+h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+}
+h1{
+    text-transform: uppercase;
+}
+P{
+    font-style: italic;
+    text-align: center;
+}
+input.ng-touched.ng-invalid{
+    border: 1px solid red;
+}
+
+input.ng-touched.ng-valid{
+    border: 1px solid green;
+}
+.container{
+    background: rgb(3, 17, 169);
+    color: white;
+
+}
+.content-body{
+    background:whitesmoke;
+
+}
+.pagination{
+    padding:20px 16px;
+    float: right;
+    font-size:18px;
+}
+.pagination::ng-deep .ngx-pagination .current{
+    background:red;
+}
